@@ -5,8 +5,8 @@ Batch Scheduler란 crontab과 유사한 스케줄링 기능을 할 수 있도록
 사용자가 실행해야 할 스크립트 경로와 시간을 입력하여, 해당 시간에 실행시켜주는 프로그램입니다.   
 입력한 스크립트의 실행 주기는 1일 1회로 고정적으로 사용할 수 있으며, 실패 시 재처리 기능을 포함하고 있습니다.   
       
-<hr/>
-
+   
+   
    
 *개발환경
 -------------
@@ -19,8 +19,8 @@ springBoot : 2.2.4 RELEASE
 quartz  : 2.3.2   
 Gradle : 6.0.1   
       
-<hr/>
    
+      
 *구성
 -------------
    
@@ -31,8 +31,8 @@ batchAdmin.sh : batchSet.conf 를 참조하여 일정 시간에 Shell Script을 
 batchSet.sh : batchSet.conf 에 정보 등록 및 초기 세팅   
 batchSet.conf : 스케줄러명과 실행해야할 스크립트와 시간 등 설정 관리   
       
-<hr/>
    
+      
 *주요기능 설명:  
 -------------
    
@@ -58,7 +58,7 @@ batchSet.conf : 스케줄러명과 실행해야할 스크립트와 시간 등 �
       –  빌드   
       
 
-4)batchAdmin.sh   
+4) batchAdmin.sh   
 
 function getConfDir() : batchSet.conf 위치 찾는 함수   
 function getBatchCont() : batchSet.conf 설정내용과 스케줄러명 가져오는 함수   
