@@ -5,6 +5,8 @@ Batch Scheduler란 crontab과 유사한 스케줄링 기능을 할 수 있도록
 입력한 스크립트의 실행 주기는 1일 1회로 고정적으로 사용할 수 있으며, 실패 시 재처리 기능을 포함하고 있습니다.
 
 
+
+
 *개발환경
 
 OS : Windows10 Pro
@@ -16,6 +18,8 @@ quartz  : 2.3.2
 Gradle : 6.0.1
 
 
+
+
 *구성
 BatchScheduler-0.0.1-SNAPSHOT.jar : Spring Batch + Quartz 조합 / batchAdmin.sh 주기적으로 실행
 startBatch.sh : BatchScheduler-0.0.1-SNAPSHOT.jar 실행하는 스크립트
@@ -23,6 +27,8 @@ stopBatch.sh : BatchScheduler-0.0.1-SNAPSHOT.jar 종료하는 스크립트
 batchAdmin.sh : batchSet.conf 를 참조하여 일정 시간에 Shell Script을 실행 및 종료 스크립트
 batchSet.sh : batchSet.conf 에 정보 등록 및 초기 세팅
 batchSet.conf : 스케줄러명과 실행해야할 스크립트와 시간 등 설정 관리
+
+
 
 
 *주요기능 설명: 
@@ -47,6 +53,8 @@ batchSet.conf : 스케줄러명과 실행해야할 스크립트와 시간 등 �
       –  빌드
 
 
+
+
 4)batchAdmin.sh
 
 function getConfDir() : batchSet.conf 위치 찾는 함수
@@ -56,6 +64,8 @@ function reProce() : Shell Script 실행 실패건 체크 및 재처리 함수
 function adminShell() : batchSet.conf 의 설정된 Shell Script 실행 및 종료
 function regSpace() : 공백 → 쉼표, 쉼표 → 공백 치환 함수
 function volumeAdmin() : 읽어오는 로그파일들 용량 관리 함수
+
+
 
 
 5) batchSet.sh
