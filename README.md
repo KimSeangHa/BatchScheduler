@@ -1,4 +1,4 @@
-*설명
+설명
 -------------
    
 ###### Batch Scheduler란 crontab과 유사한 스케줄링 기능을 할 수 있도록 개발한 프로그램이며, jar, shell, config 파일들로 구성되어있습니다.   
@@ -9,7 +9,7 @@
 .   
 .   
    
-*개발환경
+개발환경
 -------------
    
 ###### OS : Windows10 Pro   
@@ -30,7 +30,7 @@
 ###### .   
 ###### .   
    
-*구성
+구성
 -------------
    
 ###### BatchScheduler-0.0.1-SNAPSHOT.jar : Spring Batch + Quartz 조합 / batchAdmin.sh 주기적으로 실행   
@@ -45,7 +45,7 @@
 .   
 .   
       
-*주요기능 설명:  
+주요기능 설명:  
 -------------
    
 ###### 1) BatchScheduler-0.0.1-SNAPSHOT.jar      
