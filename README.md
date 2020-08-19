@@ -105,7 +105,7 @@
    
 실행결과: 
 -------------
-<img src="https://user-images.githubusercontent.com/59985995/90594417-4fe07980-e225-11ea-9ad6-c74273019ed8.png" width="90%">   
+<img src="https://user-images.githubusercontent.com/59985995/90594417-4fe07980-e225-11ea-9ad6-c74273019ed8.png" width="60%">   
 .   
 .   
 .   
