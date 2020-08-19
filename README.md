@@ -95,10 +95,6 @@
 
 ###### 5) batchSet.sh   
 ###### - Batch Setting 메뉴얼 출력 및 설정 값 입력   
-.   
-.   
-.   
-
 ###### function confExistChk() : batchSet.conf 파일 존재 여부 및 변수 생성 확인   
 ###### function init() : 초기 세팅 및 모니터링 로그 폴더 생성   
 ###### function javaChk() : JAVA 디렉토리 확인 및 설정   
