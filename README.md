@@ -4,8 +4,9 @@ Batch Scheduler란 crontab과 유사한 스케줄링 기능을 할 수 있도록
 사용자가 실행해야 할 스크립트 경로와 시간을 입력하여, 해당 시간에 실행시켜주는 프로그램입니다.
 입력한 스크립트의 실행 주기는 1일 1회로 고정적으로 사용할 수 있으며, 실패 시 재처리 기능을 포함하고 있습니다.
 
-
-
+.
+.
+.
 
 *개발환경
 
@@ -17,8 +18,9 @@ springBoot : 2.2.4 RELEASE
 quartz  : 2.3.2
 Gradle : 6.0.1
 
-
-
+.
+.
+.
 
 *구성
 BatchScheduler-0.0.1-SNAPSHOT.jar : Spring Batch + Quartz 조합 / batchAdmin.sh 주기적으로 실행
@@ -28,8 +30,9 @@ batchAdmin.sh : batchSet.conf 를 참조하여 일정 시간에 Shell Script을 
 batchSet.sh : batchSet.conf 에 정보 등록 및 초기 세팅
 batchSet.conf : 스케줄러명과 실행해야할 스크립트와 시간 등 설정 관리
 
-
-
+.
+.
+.
 
 *주요기능 설명: 
 
@@ -38,12 +41,16 @@ batchSet.conf : 스케줄러명과 실행해야할 스크립트와 시간 등 �
   ■  params[1] = "0 0/10 * * * ?" (default)
   ■  CronCycle 쉼표 → 공백 치환
   ■  고정 쉘 파일 / default 10분 주기 파라미터 전달
-  
+.
+.
+
 2) TrReReqJob.java
   ■  Job 생성
       – batchAdmin.sh 실행
       – Shell 커멘드라인 입력
       – Log 출력
+.
+.
 
 3) BatchController.java
   ■  Trigger 생성
@@ -51,9 +58,8 @@ batchSet.conf : 스케줄러명과 실행해야할 스크립트와 시간 등 �
       –  trReqJob.class → 생성된 Job 으로 구성
       –  cronCycle → Triiger 주기 설정
       –  빌드
-
-
-
+.
+.
 
 4)batchAdmin.sh
 
@@ -65,8 +71,8 @@ function adminShell() : batchSet.conf 의 설정된 Shell Script 실행 및 종�
 function regSpace() : 공백 → 쉼표, 쉼표 → 공백 치환 함수
 function volumeAdmin() : 읽어오는 로그파일들 용량 관리 함수
 
-
-
+.
+.
 
 5) batchSet.sh
 - Batch Setting 메뉴얼 출력 및 설정 값 입력
