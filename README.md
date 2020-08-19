@@ -1,14 +1,15 @@
 *설명
+-------------
 
-Batch Scheduler란 crontab과 유사한 스케줄링 기능을 할 수 있도록 개발한 프로그램이며, jar, shell, config 파일들로 구성되어있습니다.
-사용자가 실행해야 할 스크립트 경로와 시간을 입력하여, 해당 시간에 실행시켜주는 프로그램입니다.
-입력한 스크립트의 실행 주기는 1일 1회로 고정적으로 사용할 수 있으며, 실패 시 재처리 기능을 포함하고 있습니다.
+Batch Scheduler란 crontab과 유사한 스케줄링 기능을 할 수 있도록 개발한 프로그램이며, jar, shell, config 파일들로 구성되어있습니다.   
+사용자가 실행해야 할 스크립트 경로와 시간을 입력하여, 해당 시간에 실행시켜주는 프로그램입니다.   
+입력한 스크립트의 실행 주기는 1일 1회로 고정적으로 사용할 수 있으며, 실패 시 재처리 기능을 포함하고 있습니다.   
 
-.
-.
-.
+<hr/>
+
 
 *개발환경
+-------------
 
 OS : Windows10 Pro
 Vmware : CentOS Linux release 7.7.1908 (AltArch)
@@ -18,11 +19,10 @@ springBoot : 2.2.4 RELEASE
 quartz  : 2.3.2
 Gradle : 6.0.1
 
-.
-.
-.
+<hr/>
 
 *구성
+-------------
 BatchScheduler-0.0.1-SNAPSHOT.jar : Spring Batch + Quartz 조합 / batchAdmin.sh 주기적으로 실행
 startBatch.sh : BatchScheduler-0.0.1-SNAPSHOT.jar 실행하는 스크립트
 stopBatch.sh : BatchScheduler-0.0.1-SNAPSHOT.jar 종료하는 스크립트
@@ -30,11 +30,10 @@ batchAdmin.sh : batchSet.conf 를 참조하여 일정 시간에 Shell Script을 
 batchSet.sh : batchSet.conf 에 정보 등록 및 초기 세팅
 batchSet.conf : 스케줄러명과 실행해야할 스크립트와 시간 등 설정 관리
 
-.
-.
-.
+<hr/>
 
 *주요기능 설명: 
+-------------
 
 1) BatchScheduler-0.0.1-SNAPSHOT.jar
   ■  params[0] = "sh ./batchAdmin.sh"
